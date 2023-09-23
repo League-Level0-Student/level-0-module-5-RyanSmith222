@@ -20,10 +20,11 @@ public class Fibo {
 	
 		
 for(int i = 0; i < 10; i++ ) {
-	int Sum = number1 + number2;
-	System.out.println(sum);
+	int sum = number1 + number2;
 	number1 = number2;
 	number2 = sum;
+	System.out.println(number2);
+	
 	
 			
 }
