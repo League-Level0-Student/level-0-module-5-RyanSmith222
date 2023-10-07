@@ -13,6 +13,25 @@ public class Calculator {
 		int task = JOptionPane.showOptionDialog(null, "What do you choose?", "Calculator", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "divide", "multiply", "subtract", "add" }, null);
 
+		if(task == 0) {
+			divide();
+		}
+		
+		if(task == 1) {
+		//	multiply();
+		}
+		
+		if(task == 2) {
+		//	subtract();
+		}
+		
+		if(task == 3) {
+		//	add();
+		}
+		
+		
+		
+		
 		// 3) Call the correct method depending on what option the user chooses
 		
 		// 4) Call the result() method and put the answer in a pop-up
@@ -27,5 +46,26 @@ public class Calculator {
 	//		as a parameter and returns the number in a string
 	//		EX: "Your answer is " + number;
 
+	
+	public static void divide(int input1, int input2) {
+	
+	int feedback = input1/input2;
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
