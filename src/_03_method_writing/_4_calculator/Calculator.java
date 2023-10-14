@@ -12,24 +12,25 @@ public class Calculator {
 		int number2 = Integer.parseInt(input2);
 		int task = JOptionPane.showOptionDialog(null, "What do you choose?", "Calculator", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "divide", "multiply", "subtract", "add" }, null);
-
+		int total = 0;
 		if(task == 0) {
-			divide();
+			total = divide(number1, number2);
 		}
 		
 		if(task == 1) {
-		//	multiply();
+	total =	multiply(number1, number2);
 		}
 		
 		if(task == 2) {
-		//	subtract();
+	total =		subtract(number1, number2);
 		}
 		
 		if(task == 3) {
-		//	add();
+	total =		add(number1, number2);
 		}
 		
 		
+		result(total);
 		
 		
 		// 3) Call the correct method depending on what option the user chooses
@@ -47,20 +48,37 @@ public class Calculator {
 	//		EX: "Your answer is " + number;
 
 	
-	public static void divide(int input1, int input2) {
-	
-	int feedback = input1/input2;
-		
-		
-		
+	public static int divide(int a, int b) {	
+		return a/b;	
+			
 	}
 	
 	
 	
+	public static int multiply(int a, int b) {	
+		return a*b;	
+			
+	}
+
+	public static int add(int a, int b) {	
+		return a+b;	
+			
+	}
+
+	public static int subtract(int a, int b) {	
+		return a-b;	
+			
+	}
+
 	
 	
+	public static void result(int a) {	
+		
 	
-	
+	JOptionPane.showMessageDialog(null, a);
+		
+		
+	}
 	
 	
 	
