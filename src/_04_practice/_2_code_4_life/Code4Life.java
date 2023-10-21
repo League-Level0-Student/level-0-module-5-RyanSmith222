@@ -7,14 +7,19 @@ import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
+
+
+
 public class Code4Life {
+	
+	
 	/***********  SOUND ***************
 	 * Some computers are unable to play sounds. 
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
 	static boolean canPlaySounds = true;
-	
+	public static void main(String[] args) {
 	{
 	String hours = JOptionPane.showInputDialog(null, "How many hours do you spend coding each week?");
 	int hoursInt = Integer.parseInt(hours);
@@ -24,12 +29,14 @@ public class Code4Life {
 		
 	}
 			else if(hoursInt >= 3 && hoursInt <= 5) {
-				JOptionPane.showMessageDialog(null, "Yoy are a Code Ninja.");
+				JOptionPane.showMessageDialog(null, "You are a Code Ninja.");
+				
 			}
 
 			
 			else if(hoursInt > 5) {
 				playBatmanTheme();
+				displayBatman();
 			}
 			
 			else {
@@ -39,6 +46,7 @@ public class Code4Life {
 				
 			}
 	
+}
 	// 1. Ask the user how many hours they spent coding this week.
 
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
